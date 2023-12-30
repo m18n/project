@@ -2,6 +2,7 @@
 Type: 
 tags: 
 Data: {{date}}
+author: []
 ---
 
 ## Facts
@@ -33,18 +34,6 @@ AND contains(Type, "question")
 LIST FROM ""
 WHERE contains(file.outlinks.file.name, this.file.name)
 AND contains(Type, "answer")
-```
-## Bugs
-```dataview
-LIST FROM ""
-WHERE contains(file.outlinks.file.name, this.file.name)
-AND contains(Type, "bug")
-```
-## Fixs
-```dataview
-LIST FROM ""
-WHERE contains(file.outlinks.file.name, this.file.name)
-AND contains(Type, "fix")
 ```
 ## Tasks
 ```dataview
